@@ -19,6 +19,7 @@ vpc:
         id: "subnet-05f8e5caca5b10498"
         cidr: "172.31.16.0/20"
 
+    private:
       us-east-1d:
         id: "subnet-05aa5c31ed3abe2c7"
         cidr: "172.31.32.0/20"
@@ -52,3 +53,5 @@ managedNodeGroups:
     instanceType: m5.large
     # launch nodegroup in private subnets
     privateNetworking: true
+    subnets:
+      - subnet-05aa5c31ed3abe2c7
