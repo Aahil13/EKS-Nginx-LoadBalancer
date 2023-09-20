@@ -20,8 +20,12 @@ vpc:
         cidr: "172.31.16.0/20"
 
     private:
-      us-east-1d:
-        id: "subnet-05aa5c31ed3abe2c7"
+      us-east-1b:
+        id: "subnet-00808a0d6f63b4cde"
+        cidr: "172.31.32.0/20"
+
+      us-east-1e:
+        id: "subnet-05d806b980a31cbd0"
         cidr: "172.31.32.0/20"
 
 managedNodeGroups:
@@ -54,4 +58,5 @@ managedNodeGroups:
     # launch nodegroup in private subnets
     privateNetworking: true
     subnets:
-      - subnet-05aa5c31ed3abe2c7
+      - subnet-00808a0d6f63b4cde
+      - subnet-05d806b980a31cbd0
