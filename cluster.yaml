@@ -22,11 +22,11 @@ vpc:
     private:
       us-east-1b:
         id: "subnet-00808a0d6f63b4cde"
-        cidr: "172.31.32.0/20"
+        cidr: "172.31.64.0/28"
 
       us-east-1e:
         id: "subnet-05d806b980a31cbd0"
-        cidr: "172.31.32.0/20"
+        cidr: "172.31.82.0/28"
 
 managedNodeGroups:
   - name: managed-NG-public
