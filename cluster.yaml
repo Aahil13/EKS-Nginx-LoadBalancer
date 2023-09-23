@@ -30,7 +30,7 @@ vpc:
 
 managedNodeGroups:
   - name: managed-NG-public
-    instanceType: m5.large
+    instanceType: t2.micro
     minSize: 1
     desiredCapacity: 2
     maxSize: 3
@@ -54,7 +54,7 @@ managedNodeGroups:
         certManager: true
 
   - name: managed-ng-private
-    instanceType: m5.large
+    instanceType: t2.mirco
     # launch nodegroup in private subnets
     privateNetworking: true
     subnets:
