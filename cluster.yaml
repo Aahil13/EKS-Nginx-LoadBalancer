@@ -53,7 +53,7 @@ managedNodeGroups:
         externalDNS: true
         certManager: true
 
-  - name: managed-ng-private
+  - name: managed-NG-private
     instanceType: t3.medium
     # launch nodegroup in private subnets
     privateNetworking: true
