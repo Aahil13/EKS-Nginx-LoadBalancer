@@ -11,6 +11,8 @@ spec:
     - port: 80
       protocol: TCP
       targetPort: 80
+  externalIPs:
+    - 18.235.144.183 # Public IP of the worker node
   type: LoadBalancer
 ---
 apiVersion: apps/v1
